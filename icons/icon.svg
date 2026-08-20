@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C8B6E2"/>
+      <stop offset="100%" style="stop-color:#9B7EDE"/>
+    </linearGradient>
+    <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#FFF0F5"/>
+    </linearGradient>
+    <filter id="heartShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#6A4C93" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <!-- 圆角背景 -->
+  <rect x="0" y="0" width="512" height="512" rx="112" ry="112" fill="url(#bgGrad)"/>
+  <!-- 装饰小星星 - 左上 -->
+  <g transform="translate(90,80)">
+    <path d="M0,-14 L4,-4 L14,0 L4,4 L0,14 L-4,4 L-14,0 L-4,-4 Z" fill="#FFFFFF" opacity="0.7"/>
+  </g>
+  <g transform="translate(130,140) scale(0.6)">
+    <path d="M0,-14 L4,-4 L14,0 L4,4 L0,14 L-4,4 L-14,0 L-4,-4 Z" fill="#FFFFFF" opacity="0.5"/>
+  </g>
+  <!-- 装饰小星星 - 右上 -->
+  <g transform="translate(420,90)">
+    <path d="M0,-12 L3.5,-3.5 L12,0 L3.5,3.5 L0,12 L-3.5,3.5 L-12,0 L-3.5,-3.5 Z" fill="#FFFFFF" opacity="0.65"/>
+  </g>
+  <g transform="translate(380,150) scale(0.5)">
+    <path d="M0,-14 L4,-4 L14,0 L4,4 L0,14 L-4,4 L-14,0 L-4,-4 Z" fill="#FFFFFF" opacity="0.5"/>
+  </g>
+  <!-- 装饰小星星 - 左下 -->
+  <g transform="translate(80,400) scale(0.55)">
+    <path d="M0,-14 L4,-4 L14,0 L4,4 L0,14 L-4,4 L-14,0 L-4,-4 Z" fill="#FFFFFF" opacity="0.55"/>
+  </g>
+  <!-- 装饰小星星 - 右下 -->
+  <g transform="translate(430,410) scale(0.65)">
+    <path d="M0,-14 L4,-4 L14,0 L4,4 L0,14 L-4,4 L-14,0 L-4,-4 Z" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+  <!-- 中心爱心 -->
+  <g filter="url(#heartShadow)" transform="translate(256,225)">
+    <path d="M0,55 C0,55 -75,10 -75,-35 C-75,-65 -55,-80 -30,-80 C-12,-80 0,-68 0,-55 C0,-68 12,-80 30,-80 C55,-80 75,-65 75,-35 C75,10 0,55 0,55 Z" fill="url(#heartGrad)"/>
+    <!-- 爱心上的小高光 -->
+    <ellipse cx="-25" cy="-45" rx="12" ry="8" fill="#FFFFFF" opacity="0.6" transform="rotate(-20 -25 -45)"/>
+  </g>
+  <!-- 爱心里的小星星 -->
+  <g transform="translate(256,205)">
+    <path d="M0,-10 L3,-3 L10,0 L3,3 L0,10 L-3,3 L-10,0 L-3,-3 Z" fill="#FFD166"/>
+  </g>
+  <!-- 底部文字 -->
+  <text x="256" y="390" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="52" font-weight="700" fill="#FFFFFF" letter-spacing="6">工作台</text>
+  <!-- 底部小装饰圆点 -->
+  <circle cx="190" cy="430" r="5" fill="#FFFFFF" opacity="0.5"/>
+  <circle cx="256" cy="435" r="6" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="322" cy="430" r="5" fill="#FFFFFF" opacity="0.5"/>
+</svg>
